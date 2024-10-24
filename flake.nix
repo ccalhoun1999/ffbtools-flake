@@ -13,7 +13,7 @@
       in {
         packages = rec {
           default = ffbtools;
-          ffbtools = pkgs.stdenv.mkDerivation {
+          ffbtools = pkgs.multiStdenv.mkDerivation {
             pname = "ffbtools";
             version = "master";
 
